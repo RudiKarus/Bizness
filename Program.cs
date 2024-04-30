@@ -12,7 +12,7 @@ class Program
         string hashToCompare = "uP0_QaVBpDWFeo8-dRzDqRwXQ2I";
 
         // Since SHA is based on a non-linear function, there is no decryption.
-        // For this reason we need to "HashAndCompare" the entries of our wordlist...
+        // For this reason we need to "HashAndCompare" the entries from our wordlist...
         List<string> wordlist = new List<string>(File.ReadAllLines($"{System.Environment.CurrentDirectory}/rockyou.txt"));
         foreach (string passwordToCompare in wordlist)
         {
